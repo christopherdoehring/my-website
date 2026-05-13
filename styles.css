@@ -193,3 +193,33 @@ body {
     background-color: #b30000;
     transform: scale(1.05);
 }
+
+/* Large desktop → medium desktop */
+@media screen and (max-width: 1575px) {
+    .killers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1000px) {
+    .killers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Phone */
+@media screen and (max-width: 650px) {
+    .killer-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .killer-card img {
+        width: 90%;
+    }
+
+    .killer-card p {
+        position: static;
+        opacity: 1;
+    }
+}
