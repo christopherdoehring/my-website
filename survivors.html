@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +18,152 @@
       <a href="./survivors.html">Survivors</a>
       <a href="https://deadbydaylight.com/" target="_blank" rel="noopener noreferrer">Official DBD Site</a>
     </nav>
+    <p>Survivors must work together, repair generators, rescue teammates, and escapse the Trail!</p>
   </header>
 
-  <main>
-    <!-- Placeholder content for future page development -->
-    <section>
-      <h2>Under Construction</h2>
-      <p>This page will eventually include information about Dead by Daylight Survivors.</p>
+  <main class="survivors-page">
+    <!-- Main survivor overview section -->
+    <section class="survivor-info-section">
+      <h2>What Survivors Do</h2>
+      <p>
+        In Dead by Daylight, Survivors are the four players trying to escape the Killer.
+        Their main objective is to repair five generators, open the exit gates, and leave
+        the Trial alive. While that sounds simple, Survivors also have to avoid being chased,
+        rescue teammates from hooks, heal injuries, and make smart decisions under pressure.
+      </p>
+    </section>
+
+    <!-- Flexbox layout for survivor strategy -->
+    <section class="survivor-strategy-flex">
+      <div class="strategy-card">
+        <h2>Repair Generators</h2>
+        <p>
+          Generators are the main objective for Survivors. Repairing them requires focus,
+          timing, and awareness because missing skill checks can alert the Killer.
+        </p>
+      </div>
+
+      <div class="strategy-card">
+        <h2>Help Teammates</h2>
+        <p>
+          Survivors need teamwork to stay alive. This includes rescuing teammates from hooks,
+          healing injured players, and protecting others during dangerous moments.
+        </p>
+      </div>
+
+      <div class="strategy-card">
+        <h2>Escape the Killer</h2>
+        <p>
+          Chases are one of the most exciting parts of the game. Survivors use pallets,
+          windows, lockers, and map knowledge to create distance and survive longer.
+        </p>
+      </div>
+    </section>
+
+    <section class="survivor-info-section">
+      <h2>Why Survivors Are Fun to Play</h2>
+      <p>
+        Playing Survivor is fun because every match feels different. Sometimes the team works
+        together perfectly, and other times everything goes wrong fast. Good Survivor gameplay
+        requires communication, awareness, timing, and the ability to stay calm while being chased.
+        That unpredictability is one of the reasons Dead by Daylight stays interesting after
+        hundreds or even thousands of hours.
+      </p>
+    </section>
+  </main>
+
+  <main class="survivor-grid">
+    <section class="survivor-card" id="dwight">
+      <div class="survivor-card-inner">
+        <!-- Front of card -->
+        <div class="survivor-card-front">
+          <img src="./Images/dwight.webp" alt="Dwight Fairfield" width="300" height="400">
+          <h2>Dwight Fairfield</h2>
+        </div>
+        <!-- Back of card -->
+        <div class="survivor-card-back">
+          <h2>Dwight Fairfield</h2>
+          <p>
+            An unlikely leader forced to rise to the occasion, Dwight Fairfield’s reluctant bravery inspires those
+            around
+            him. Understanding the value of teamwork, Dwight is adept at locating and bolstering the efficiency of his
+            teammates.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="survivor-card" id="meg">
+      <div class="survivor-card-inner">
+        <!-- Front of card -->
+        <div class="survivor-card-front">
+          <img src="./Images/meg.webp" alt="Meg Thomas" width="300" height="400">
+          <h2>Meg Thomas</h2>
+        </div>
+        <!-- Back of card -->
+        <div class="survivor-card-back">
+          <h2>Meg Thomas</h2>
+          <p>
+            Driven by reckless courage, the athletic Meg Thomas has never been afraid to push her limits. Prone to
+            stepping
+            up in the clutch, Meg gets a thrill out of goading Killers into lengthy chases, buying essential time for
+            her
+            teammates.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="survivor-card" id="claudette">
+      <div class="survivor-card-inner">
+        <!-- Front of card -->
+        <div class="survivor-card-front">
+          <img src="./Images/claudette.webp" alt="Claudette Morel" width="300" height="400">
+          <h2>Claudette Morel</h2>
+        </div>
+        <!-- Back of card -->
+        <div class="survivor-card-back">
+          <h2>Claudette Morel</h2>
+          <p>
+            Claudette understands the value of altruism, using her aptitude for botany to ensure her teammates are
+            prepared
+            for the challenges ahead. An expert healer to herself and others, Claudette’s supportive presence is always
+            welcome.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="survivor-card" id="jake">
+      <div class="survivor-card-inner">
+        <!-- Front of card -->
+        <div class="survivor-card-front">
+          <img src="./Images/jake.webp" alt="Jake Park" width="300" height="400">
+          <h2>Jake Park</h2>
+        </div>
+        <!-- Back of card -->
+        <div class="survivor-card-back">
+          <h2>Jake Park</h2>
+          <p>A solitary specialist, Jake Park’s time in the wilderness has sharpened his survival instincts. Stealthy
+            and resourceful, the only sign of his presence are the Sabotaged Hooks he leaves behind.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="survivor-card" id="nea">
+      <div class="survivor-card-inner">
+        <!-- Front of card -->
+        <div class="survivor-card-front">
+          <img src="./Images/nea.webp" alt="Nea Karlsson" width="300" height="400">
+          <h2>Nea Karlsson</h2>
+        </div>
+        <!-- Back of card -->
+        <div class="survivor-card-back">
+          <h2>Nea Karlsson</h2>
+          <p>
+            Years of evading authorities and navigating the streets of Sweden have kept the elusive Nea Karlsson one
+            step ahead. Capable of escaping in a pinch, her catlike agility has gotten her out of trouble time and
+            again.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -31,4 +171,5 @@
     <p>&copy; 2026 Christopher Doehring.</p>
   </footer>
 </body>
+
 </html>
