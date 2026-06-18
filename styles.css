@@ -107,6 +107,7 @@ html {
     gap: 2em;
     margin: 2em auto;
     padding: 2em;
+    justify-items: center;
 }
 
 /* Killer images */
@@ -135,6 +136,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-shadow: 2px 2px 4px #660000;
 
     text-align: center;
 
@@ -197,41 +199,57 @@ html {
     transform: scale(1.05);
 }
 
-/* Fixed siderbar navigation */
-.sidebar {
-    position: fixed;
-    top: 8em;
-    left: 1em;
-    width: 12em;
-    max-height: 75vh;
-    overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+/* Compact sticky killer jump menu */
+.killer-jump-menu {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    max-width: 1200px;
+    margin: 1em auto 2em auto;
     padding: 1em;
+
+    background-color: rgba(0, 0, 0, 0.9);
     border: 0.15em solid #8b0000;
     border-radius: 0.5em;
-    box-sizing: border-box;
 }
 
-.sidebar h3 {
-    color: #ff4d4d;
+.killer-jump-menu h2 {
+    margin-top: 0;
     text-align: center;
+    color: #ff4d4d;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.sidebar a {
-    display: block;
-    color: #f5f5f5;
-    text-decoration: none;
-    margin: 0.5em 0;
-    padding: 0.5em;
-    border-radius: 0.3em;
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+.killer-links {
+    display: flex;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 0.5em;
+
+    padding-bottom: 0.5em;
+
+    scrollbar-width: thin;
 }
 
-.sidebar a:hover {
-    background-color: #8b0000;
+.killer-links a {
+    flex-shrink: 0;
+
     color: white;
+    background-color: #8b0000;
+    text-decoration: none;
+
+    padding: 0.5em 0.8em;
+    border-radius: 0.4em;
+
+    font-size: 0.9em;
+}
+
+.killer-links a:hover {
+    background-color: #b30000;
 }
 
 /* Push content away from sidebar */
@@ -303,28 +321,12 @@ img {
     .killers-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .sidebar {
-        position: static;
-        width: auto;
-        max-height: none;
-        overflow-y: visible;
-        margin-bottom: 2em;
-    }
 }
 
 /* Tablet */
 @media screen and (max-width: 1000px) {
     .killers-grid {
         grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        position: static;
-        width: auto;
-        max-height: none;
-        overflow-y: visible;
-        margin-bottom: 2em;
     }
 }
 
@@ -357,14 +359,6 @@ img {
 
     .killer-card:hover {
         transform: none;
-    }
-
-    .sidebar {
-        position: static;
-        width: auto;
-        max-height: none;
-        overflow-y: visible;
-        margin-bottom: 2em;
     }
 }
 

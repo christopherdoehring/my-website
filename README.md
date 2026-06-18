@@ -49,7 +49,7 @@ The survivors page explains survivor gameplay and includes:
 -Visual Studio Code
 
 ## Updates
-### May 2026
+### Jun 2026
 -Added responsive layouts and media queries
 -Added CSS Grid layouts
 -Added Flexbox navigation and content layouts
@@ -58,6 +58,11 @@ The survivors page explains survivor gameplay and includes:
 -Added sidebar navigation with anchor links
 -Improved spacing, backgrounds, and responsive scaling
 -Deployed website using GitHub Pages
+*NEW
+-Killer page cards are not centered.
+-Red text somethimes blends into backgroud.
+-Survivors pafe has too much empty spave before the flip cards.
+-Killer list/sidebar takes up too much atttention before users see the cards.
 
 ## Author
 Christopher Doehring
